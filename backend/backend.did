@@ -1,8 +1,24 @@
 service : {
+  getBenefits: () -> (vec text) query;
   getCompanyInfo: () ->
    (record {
       mission: text;
       name: text;
       values: vec text;
     }) query;
+  getFAQ: () -> (vec record {
+                       answer: text;
+                       question: text;
+                     }) query;
+  getJobOpenings: () -> (vec record {
+                               description: text;
+                               title: text;
+                             }) query;
+  getTestimonials: () ->
+   (vec record {
+          name: text;
+          quote: text;
+          role: text;
+        }) query;
+  submitContactForm: (text, text, text) -> (text);
 }

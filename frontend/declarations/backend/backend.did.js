@@ -1,5 +1,6 @@
 export const idlFactory = ({ IDL }) => {
   return IDL.Service({
+    'getBenefits' : IDL.Func([], [IDL.Vec(IDL.Text)], ['query']),
     'getCompanyInfo' : IDL.Func(
         [],
         [
@@ -10,6 +11,34 @@ export const idlFactory = ({ IDL }) => {
           }),
         ],
         ['query'],
+      ),
+    'getFAQ' : IDL.Func(
+        [],
+        [IDL.Vec(IDL.Record({ 'question' : IDL.Text, 'answer' : IDL.Text }))],
+        ['query'],
+      ),
+    'getJobOpenings' : IDL.Func(
+        [],
+        [IDL.Vec(IDL.Record({ 'title' : IDL.Text, 'description' : IDL.Text }))],
+        ['query'],
+      ),
+    'getTestimonials' : IDL.Func(
+        [],
+        [
+          IDL.Vec(
+            IDL.Record({
+              'name' : IDL.Text,
+              'role' : IDL.Text,
+              'quote' : IDL.Text,
+            })
+          ),
+        ],
+        ['query'],
+      ),
+    'submitContactForm' : IDL.Func(
+        [IDL.Text, IDL.Text, IDL.Text],
+        [IDL.Text],
+        [],
       ),
   });
 };
