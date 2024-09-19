@@ -11,52 +11,56 @@
         <h1 id="companyName">Welcome to Our Company</h1>
         <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
-    <main>
-        <section id="mission">
-            <h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                </svg>
-                Our Mission
-            </h2>
-            <p id="missionStatement"></p>
-        </section>
-        <section id="values">
-            <h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                </svg>
-                Our Values
-            </h2>
-            <ul id="valuesList"></ul>
-        </section>
-        <section id="jobOpenings">
-            <h2>Job Openings</h2>
-            <div id="jobList"></div>
-        </section>
-        <section id="benefits">
-            <h2>Employee Benefits</h2>
-            <ul id="benefitsList"></ul>
-        </section>
-        <section id="testimonials">
-            <h2>Employee Testimonials</h2>
-            <div id="testimonialsList"></div>
-        </section>
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-            <div id="faqList"></div>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+    <main class="two-column-layout">
+        <div class="column">
+            <section id="mission">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Our Mission
+                </h2>
+                <p id="missionStatement"></p>
+            </section>
+            <section id="values">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    Our Values
+                </h2>
+                <ul id="valuesList"></ul>
+            </section>
+            <section id="jobOpenings">
+                <h2>Job Openings</h2>
+                <div id="jobList"></div>
+            </section>
+        </div>
+        <div class="column">
+            <section id="benefits">
+                <h2>Employee Benefits</h2>
+                <ul id="benefitsList"></ul>
+            </section>
+            <section id="testimonials">
+                <h2>Employee Testimonials</h2>
+                <div id="testimonialsList"></div>
+            </section>
+            <section id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div id="faqList"></div>
+            </section>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2023 Our Company. All rights reserved.</p>

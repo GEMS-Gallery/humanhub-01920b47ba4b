@@ -50,10 +50,21 @@ h2 {
     margin-right: 10px;
 }
 
+.two-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
 section {
     background-color: var(--section-bg-color);
-    padding: 3rem;
-    margin-bottom: 3rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease;
@@ -143,7 +154,15 @@ button[type="submit"]:hover {
         padding: 1.5rem;
     }
 
+    .two-column-layout {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
     section {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 }
